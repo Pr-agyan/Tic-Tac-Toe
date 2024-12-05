@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout consistency */
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Set a readable default font */
+}
+
+.container {
+    height: 70vh;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8); /* Slightly reduced shadow intensity */
+    font-size: 8vmin;
+    color: red;
+    background-color: #ffffc7;
+    cursor: pointer; /* Visual feedback on hover */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text within the box */
+}
+
+.box.disabled {
+    cursor: not-allowed; /* Visual feedback for disabled boxes */
+    opacity: 0.6; /* Optional: fade out disabled boxes */
+}
+
+#reset-button,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem; /* Added margin for better spacing */
+}
+
+#reset-button:hover,
+#new-btn:hover {
+    background-color: #333333; /* Slight darkening effect on hover */
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 8vmin;
+    margin-bottom: 1rem; /* Added spacing below the message */
+}
+
+.msg-container {
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none; /* Fixed display to properly hide the element */
+}
